@@ -14,6 +14,12 @@ module.exports = {
     modules: ['node_modules', 'bower_components'],
     descriptionFiles: ['package.json']
   },
+  devServer: {
+    port: 9000,
+    contentBase: path.join(__dirname),
+    historyApiFallback: true,
+    compress: false
+  },
   devtool: 'inline-source-map',
   module: {
     rules: [
